@@ -7,10 +7,18 @@
     <title>Teste 1 php</title>
 </head>
 <body>
-    <1php>
+    <?php
 
-        echo "Boa tarde à todos"
+        //De laração de Variável
+        $hora = date("H");
 
-
+        if($hora < 12){
+            echo "<p> Bom dia </p>";
+        } else if($hora < 10){
+            echo "<p>Boa tarde!</p>";
+        } else{
+            echo"<p>Boa noite!</p>";
+        }
+    ?>
 </body>
 </html>
